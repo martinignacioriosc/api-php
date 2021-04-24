@@ -24,6 +24,7 @@
 
             $("#submit").click(function() {
 
+
                 var title = $("#title").val();
                 var body = $("#body").val();
                 var author = $("#author").val();
@@ -42,8 +43,9 @@
                         author: author
                     },
                     cache: false,
-                    success: function(data) {
-                        alert($data);
+                    success: function(data) {   
+                        alert('inserted');
+                        alert(data);
                     },
                     error: function(xhr, status, error) {
                         console.error(xhr);
